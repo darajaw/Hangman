@@ -13,8 +13,8 @@ const messageElement = document.getElementById('message');
 
 // Initialize the game
 function startGame() {
-    selectedWord = words[Math.floor(Math.random() * words.length)];
-    guessedWord = Array(selectedWord.length).fill('_');
+    selectedWord = words[Math.floor(Math.random() * words.length)]; //choose a random word from the array
+    guessedWord = Array(selectedWord.length).fill('_'); //array of underscores equal to word length
     wrongGuesses = [];
     updateDisplay();
     messageElement.textContent = '';
